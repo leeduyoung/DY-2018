@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../provider/data/data.service';
 
 @Component({
   selector: 'app-intro',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) { 
+
+  }
 
   ngOnInit() {
+    console.log(window);
+    this.dataService.setDeviceSize({outerWidth: window.outerWidth, outerHeight: window.outerHeight, innerWidth: innerWidth, innerHeight: innerHeight});
+    console.log(this.dataService.getDeviceSize());
   }
 
 }

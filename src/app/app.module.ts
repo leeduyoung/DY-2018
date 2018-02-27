@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
 import { HistoryComponent } from './history/history.component';
+import { DataService } from './provider/data/data.service';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { HistoryComponent } from './history/history.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
