@@ -1,0 +1,44 @@
+.home-container {
+    height: 700px;
+    padding: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .title {
+        font-size: 90px;
+        color: #8cddeb;
+        font-weight: 700;
+    }
+    .sub-title {
+        font-size: 24px;
+        color: #aaa;
+        font-weight: 300;
+    }
+    .description {
+        font-size: 20px;
+        margin-top: 60px;
+    }
+}
+
+.history-container {
+    position: relative;
+    padding: 80px;
+    background-color: #f5f5f5;
+    display: flex;
+    .horizontal-half {
+        flex-basis: 50%;
+        padding: 0.5em;
+    }
+
+    .history-item {
+        position: relative;
+        text-align: center;
+        .history-image {
+            // width: 100%;
+            // height: auto;
+            margin-bottom: 0.5em;
+        }
+    }
+}

@@ -7,7 +7,6 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { IntroComponent } from './intro/intro.component';
-import { HistoryComponent } from './history/history.component';
 import { DataService } from './provider/data/data.service';
 
 
@@ -18,7 +17,6 @@ import { DataService } from './provider/data/data.service';
     HeaderComponent,
     HomeComponent,
     IntroComponent,
-    HistoryComponent
   ],
   imports: [
     BrowserModule
