@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { DataService } from '../provider/data/data.service';
 
 @Component({
@@ -8,14 +8,21 @@ import { DataService } from '../provider/data/data.service';
 })
 export class IntroComponent implements OnInit {
 
-  constructor(private dataService: DataService) { 
+  deviceSize: any = {};
+
+  constructor(private dataService: DataService) {
 
   }
 
   ngOnInit() {
-    console.log(window);
-    this.dataService.setDeviceSize({outerWidth: window.outerWidth, outerHeight: window.outerHeight, innerWidth: innerWidth, innerHeight: innerHeight});
-    console.log(this.dataService.getDeviceSize());
+    this.dataService.setDeviceSize({ outerWidth: window.outerWidth, outerHeight: window.outerHeight, innerWidth: window.innerWidth, innerHeight: window.innerHeight });
+    this.deviceSize.innerHeight = window.innerHeight;
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.deviceSize.innerHeight = event.target.innerHeight;
+    this.deviceSize.innerWidth = event.target.innerWidth;
   }
 
 }
