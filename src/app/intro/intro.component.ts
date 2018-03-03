@@ -11,7 +11,7 @@ export class IntroComponent implements OnInit {
   deviceSize: any = {};
 
   constructor(private dataService: DataService) {
-
+    console.log('개발자시군요! 반갑습니다. :)');
   }
 
   ngOnInit() {

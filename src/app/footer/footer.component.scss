@@ -1,0 +1,41 @@
+.footer-container {
+    padding: 80px;
+    .address {
+        margin-top: 3em;
+        a {
+            padding: 0 20px;
+            text-decoration: none;
+        }
+        .email {
+            .circle {
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #8690CB;
+            }
+        }
+        .phone {
+        }
+    }
+}
+
+.contents {
+    text-align: center;
+    .title {
+        font-size: 64px;
+        color: #3e0694;
+        font-weight: 700;
+    }
+    .sub-title {
+        margin-top: 6px;
+        font-size: 24px;
+        color: #aaa;
+        font-weight: 300;
+    }
+    .description {
+        font-size: 20px;
+        margin-top: 60px;
+        letter-spacing: 0.025rem;
+        line-height: 1.6em;
+    }
+}

@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+/**
+
+Main Color = #3e0694
+Sub Main Color = #8690CB
+Default Font Color = #3f3f3f;
+
+**/
+
+/** 텍스트 블록 드래그 색상 설정 **/
+::selection {
+    background:#8690CB;
+    color: #FFF;
+    text-shadow: none;
+}
+::-moz-selection {
+    background:#8690CB;
+    color: #FFF;
+    text-shadow: none;
+}
+::-webkit-selection {
+    background:#8690CB;
+    color: #FFF;
+    text-shadow: none;
+}
