@@ -2,19 +2,38 @@
     padding: 80px;
     .address {
         margin-top: 3em;
+        color: #484848;
+        font-size: 16px;
         a {
             padding: 0 20px;
             text-decoration: none;
+            color: inherit;
         }
-        .email {
-            .circle {
-                width: 60px;
-                height: 60px;
-                border-radius: 50%;
-                background-color: #8690CB;
+        .circle {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #8690CB;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            &::before {
+                color: white;
             }
         }
-        .phone {
+        .email i {
+            font-size: 26px;
+        }
+        .phone i {
+            font-size: 40px;
         }
     }
 }
