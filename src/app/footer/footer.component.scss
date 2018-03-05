@@ -1,14 +1,15 @@
 .footer-container {
-    padding: 80px;
     .address {
         margin-top: 3em;
         color: #484848;
         font-size: 16px;
+
         a {
             padding: 0 20px;
             text-decoration: none;
             color: inherit;
         }
+
         .circle {
             position: relative;
             display: inline-block;
@@ -20,37 +21,74 @@
             vertical-align: middle;
             margin-right: 5px;
         }
+
         i {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
+
             &::before {
                 color: white;
             }
         }
+
         .email i {
             font-size: 26px;
         }
+
         .phone i {
             font-size: 40px;
+        }
+    }
+
+    .bottom {
+        border-top: 1px solid #ddd;
+        padding: 16px;
+        display: flex;
+        align-items: center;
+        .item {
+            flex-basis: 33%;
+            &.left {
+                text-align: left;
+            }
+            &.center {
+                text-align: center;
+            }
+            &.right {
+                text-align: right;
+                a {
+                    text-decoration: none;
+                }
+                i {
+                    color: #666;
+                    margin: 0 4px;
+                    &::before {
+                        font-size: 30px;
+                    }
+                }
+            }
         }
     }
 }
 
 .contents {
+    padding: 80px;
     text-align: center;
+
     .title {
         font-size: 64px;
         color: #3e0694;
         font-weight: 700;
     }
+
     .sub-title {
         margin-top: 6px;
         font-size: 24px;
         color: #aaa;
         font-weight: 300;
     }
+
     .description {
         font-size: 20px;
         margin-top: 60px;
