@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { DataService } from '../provider/data/data.service';
+import * as Typed from 'typed.js';
 
 @Component({
   selector: 'app-intro',
@@ -17,6 +18,7 @@ export class IntroComponent implements OnInit {
   ngOnInit() {
     this.dataService.setDeviceSize({ outerWidth: window.outerWidth, outerHeight: window.outerHeight, innerWidth: window.innerWidth, innerHeight: window.innerHeight });
     this.deviceSize.innerHeight = window.innerHeight;
+    this.setTypedAnimation();
   }
 
   @HostListener('window:resize', ['$event'])
@@ -25,4 +27,16 @@ export class IntroComponent implements OnInit {
     this.deviceSize.innerWidth = event.target.innerWidth;
   }
 
+  setTypedAnimation() {
+    let typed = new Typed(".inner", {
+      // strings: ["This is a JavaScript library", "This is an ES6 module \n", "lorem4"],
+      strings: ["I want to make things <br/> that", "I want to make things <br/> that make a difference", "I want to make things <br/> that make a difference."],
+      smartBackspace: true, // Default value
+      typeSpeed: 60,
+      startDelay: 800,
+      backSpeed: 30,
+      loop: false,
+      loopCount: Infinity,
+    });
+  }
 }

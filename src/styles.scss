@@ -7,17 +7,25 @@ $primaryFontColor: #3f3f3f;
 
 /** 텍스트 블록 드래그 색상 설정 **/
 ::selection {
-    background:$secondColor;
+    background: $secondColor;
     color: #FFF;
     text-shadow: none;
 }
+
 ::-moz-selection {
-    background:$secondColor;
+    background: $secondColor;
     color: #FFF;
     text-shadow: none;
 }
+
 ::-webkit-selection {
-    background:$secondColor;
+    background: $secondColor;
     color: #FFF;
     text-shadow: none;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor {
+    opacity: 0 !important;
+    display: none !important;
 }
