@@ -15,4 +15,7 @@ export class HomeComponent implements OnInit {
   
   }
 
+  goPortfolio() {
+    console.log('goPortfolio()');
+  }
 }

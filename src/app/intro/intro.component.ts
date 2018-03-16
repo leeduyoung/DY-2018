@@ -29,9 +29,8 @@ export class IntroComponent implements OnInit {
 
   setTypedAnimation() {
     let typed = new Typed(".inner", {
-      // strings: ["This is a JavaScript library", "This is an ES6 module \n", "lorem4"],
       strings: ["I want to make things <br/> that", "I want to make things <br/> that make a difference", "I want to make things <br/> that make a difference."],
-      smartBackspace: true, // Default value
+      smartBackspace: true,
       typeSpeed: 60,
       startDelay: 800,
       backSpeed: 30,
