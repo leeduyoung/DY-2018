@@ -1,0 +1,58 @@
+h3 {
+    font-size: 39px;
+    font-weight: 200;
+    line-height: 50px;
+}
+p {
+    margin-top: 24px;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 23px;
+}
+
+.project-container {
+
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .project-image-container {
+        img {
+            width: 450px;
+        }
+    }
+
+    .project-description {
+        margin-left: 50px;
+    }
+
+}
+
+.position-container {
+    
+    height: 750px;
+    background-color: #f5f5f5;
+    display: flex;
+    text-align: center;
+
+    .left-container {
+        padding: 2rem;
+        flex-basis: 50%;
+    }
+    .right-container {
+        padding: 2rem;
+        flex-basis: 50%;
+    }
+    .title {
+
+    }
+    .description {
+        
+    }
+}
+
+.image-slider-container {
+
+    height: 750px;
+}
