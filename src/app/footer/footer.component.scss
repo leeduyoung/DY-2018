@@ -22,6 +22,21 @@
             text-align: center;
             vertical-align: middle;
             margin-right: 5px;
+            box-shadow: 0px 5px 9px #ccc;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        a.email, a.phone {
+            &:hover {
+                color: $secondColor;
+                .circle {
+                    animation: scale-up-down 0.5s ease-in-out 1 alternate;
+                    background-color: #f5f5f5;
+                    i::before {
+                        color: $secondColor;
+                    }
+                }
+            }
         }
 
         i {
@@ -71,7 +86,18 @@
                     &::before {
                         font-size: 30px;
                     }
+                    transition: color 0.2s;
                 }
+            }
+
+            .github i:hover {
+                color: #25292E;
+            }
+            .facebook i:hover {
+                color: #4468B0;
+            }
+            .tistory i:hover {
+                color: #E8532D;
             }
         }
     }
@@ -99,5 +125,23 @@
         margin-top: 60px;
         letter-spacing: 0.025rem;
         line-height: 1.6em;
+    }
+}
+
+@keyframes scale-up-down {
+    0% {
+        transform: scale(1.0);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1.0);
     }
 }
