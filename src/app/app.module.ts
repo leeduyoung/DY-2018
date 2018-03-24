@@ -10,6 +10,7 @@ import { IntroComponent } from './intro/intro.component';
 import { DataService } from './provider/data/data.service';
 import { MainComponent } from './main/main.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     HomeComponent,
     IntroComponent,
     MainComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
