@@ -13,6 +13,9 @@ export class PortfolioComponent implements OnInit {
   ngOnInit() {
     const id = +this.route.snapshot.paramMap.get('id');
     console.log(id);
+
+    console.log(window);
+    window.scroll(0,0);
   }
 
 }
